@@ -1,0 +1,1902 @@
+{
+    "0": {
+        "rawQuestion": "#### Q1. In which of these situations are interfaces better than abstract classes?\n\n",
+        "selection": [
+            {
+                "rawOption": " When you need to define an object type's characteristics, use an interface. When you need to define an object type's capabilities, use an abstract class.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Interfaces are a legacy of older versions of C#, and are interchangeable with the newer abstract class feature.\n",
+                "status": "selected"
+            },
+            {
+                "rawOption": " When you need a list of capabilities and data that are classes-agnostic, use an interface. When you need a certain object type to share characteristics, use an abstract class.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " You should use both an interface and an abstract class when defining any complex object.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "1": {
+        "rawQuestion": "#### Q2. Which statement is true of delegates?\n\n",
+        "selection": [
+            {
+                "rawOption": " Delegates are not supported in the current version of C#\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " They cannot be used as callbacks.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Only variables can be passed to delegates as parameters.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " They can be chained together.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "2": {
+        "rawQuestion": "#### Q3. Which choice best defines C#'s asynchronous programming model?\n\n",
+        "selection": [
+            {
+                "rawOption": " reactive\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " inherited callback\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " task-based\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " callback-based",
+                "status": "selected"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "3": {
+        "rawQuestion": "#### Q4. What is the difference between the ref and out keywords?\n\n",
+        "selection": [
+            {
+                "rawOption": " Variables passed to out specify that the parameter is an output parameter, while ref specifies that a variable may be passed to a function without being initialized.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Variables passed to ref can be passed to a function without being initialized, while out specifies that the value is a reference value that can be changed inside the calling method.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Variables passed to out can be passed to a function without being initialized, while ref specifies that the value is a reference value that can be changed inside the calling method.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Variables passed to ref specify that the parameter is an output parameter, while out specifies that a variable may be passed to a function without being initialized.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "4": {
+        "rawQuestion": "#### Q5. How could you retrieve information about a class, as well as create an instance at runtime?\n\n",
+        "selection": [
+            {
+                "rawOption": " reflection\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " serialization\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " abstraction\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " dependency injection",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "5": {
+        "rawQuestion": "#### Q6. What is this code an example of?\n\n```cs\n    private static object objA;\n    private static object objB;\n\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " a private class that uses multithreading\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " multithread coding\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " thread mismanagement\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a potential deadlock",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "6": {
+        "rawQuestion": "#### Q7. What is the difference between an anonymous type and a regular data type?\n\n",
+        "selection": [
+            {
+                "rawOption": " Anonymous types don't have type names\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Anonymous types can only be static\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Anonymous types can be used only in struts\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Anonymous types don't work with LINQ.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "7": {
+        "rawQuestion": "#### Q8. When would you use a Dictionary rather that an Array type in your application?\n\n",
+        "selection": [
+            {
+                "rawOption": " when you need a jagged collection structure\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when you need to store values of the same type\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when you need to store key-value pairs rather than single values\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when you need an ordered, searchable list",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "8": {
+        "rawQuestion": "#### Q9. What is the difference between a.Equals(b) and a == b?\n\n",
+        "selection": [
+            {
+                "rawOption": " The .Equals method compares reference identities while the `==` compares contents.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The .Equals method compares primitive values while `==` compares all values.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The .Equals method compares contents while `==` compares reference identity.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The .Equals method compares reference type while `==` compares primitive value types",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "9": {
+        "rawQuestion": "#### Q10. Which choice best describes a deadlock situation?\n\n",
+        "selection": [
+            {
+                "rawOption": " when you try to instantiate two objects at the same time in the same class or struct\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when you are trying to execute an action after a user event is registered\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when simultaneous instructions are waiting on each other to finish before executing\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when you try to execute a series of events simultaneously on multiple threads",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "10": {
+        "rawQuestion": "#### Q11. How does the async keyword work?\n\n",
+        "selection": [
+            {
+                "rawOption": " It allows access to asynchronous methods in the C# API\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It allows thread pooling and synchronous processes in static classes.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It allows the await keyword to be used in a method\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It allows access to synchronous methods in the C# API",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "11": {
+        "rawQuestion": "#### Q12. What is an object in C#?\n\n",
+        "selection": [
+            {
+                "rawOption": " a class or struct, including its variables and functions\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a primitive data type that can be created only at compile time\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a value type that can be used only with an abstract class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " an instance of a class or struct that includes fields, properties, and/or methods",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "12": {
+        "rawQuestion": "#### Q13. Which code snippet declares an anonymous type named userData?\n\n",
+        "selection": [
+            {
+                "rawOption": " `var<<!---->T> userData = new <<!---->T> { name = \"John\", age = 32 };`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `var userData = new { name = \"John\", age = 32 };`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `AType userData = new AType { name = \"John\", age = 32 };`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "13": {
+        "rawQuestion": "#### Q14. What will be returned when this method is executed?\n\n`public void userInput(string charParameters) { }`\n\n",
+        "selection": [
+            {
+                "rawOption": " nothing\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a Boolean\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a string variable\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " an integer",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "14": {
+        "rawQuestion": "#### Q15. In what order would the employee names in this example be printed to the console?\n\n```cs\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\n\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\n\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " ascending\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " unordered\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " descending\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " first in, first out",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "15": {
+        "rawQuestion": "#### Q16. Lambda expressions are often used in tandem with which of the following?\n\n",
+        "selection": [
+            {
+                "rawOption": " Namespaces\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " LINQ\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Type Aliasing\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Assemblies",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "16": {
+        "rawQuestion": "#### Q17. What is the correct formatting for single line and multiline comments?\n\n",
+        "selection": [
+            {
+                "rawOption": " `/_/ - Single Line`\n      `/_ - Multiline`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `// Multiline`\n      `/_ Single Line _/`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `//\\* Multiline`\n      `/ Single Line`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `// Single Line`\n      `/* Multiline */`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "17": {
+        "rawQuestion": "#### Q18. How do you make a method in an abstract class overridable?\n\n",
+        "selection": [
+            {
+                "rawOption": " Make it public\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Make it static\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Make it private\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Make it virtual",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "18": {
+        "rawQuestion": "#### Q19. How would you write code for an integer property called Age with a getter and setter?\n\n",
+        "selection": [
+            {
+                "rawOption": " public int Age { get - set }\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public int Age: get set;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public int Age (get, set );\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public int Age { get; set; }",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "19": {
+        "rawQuestion": "#### Q20. What is an abstract class?\n\n",
+        "selection": [
+            {
+                "rawOption": " a class that is denoted by the class keyword (can be seen and used by any other class in the system--thus it is by default public)\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " something denoted by the abstract keyword and used system wide; if you want any program to create an object of a class you use the abstract class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a class that is denoted by the virtual keyword\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a class that can be used only as base class",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "20": {
+        "rawQuestion": "#### Q21. When using a thread pool what happens to a given thread after it finishes its task?\n\n",
+        "selection": [
+            {
+                "rawOption": " The thread is destroyed and memory is freed up.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The thread runs in loop until the next assignment.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The thread goes inactive in the background and waits for garbage collection.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The thread returns to the pool for reuse.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "21": {
+        "rawQuestion": "#### Q22. Which choice represents a class that inherits behavior from a base class?\n\n",
+        "selection": [
+            {
+                "rawOption": " a second base class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a revised class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a derived class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a parent class",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "22": {
+        "rawQuestion": "#### Q23. What does operator overloading allow you to do?\n\n",
+        "selection": [
+            {
+                "rawOption": " hide built-in operators when necessary\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " add methods to be interpreted by the compiler at runtime\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " define how enums and other primitive value types work within the rest of the application\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " define custom functionality for common operators like addition and equality",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "23": {
+        "rawQuestion": "#### Q24. What is the main purpose of LINQ?\n\n",
+        "selection": [
+            {
+                "rawOption": " to delete duplicate data\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " to bind namespaces and assemblies\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " to query and transform data\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " to connect assemblies",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "24": {
+        "rawQuestion": "#### Q25. What is the correct syntax for a new generic list of strings named contacts?\n\n",
+        "selection": [
+            {
+                "rawOption": " public List<string names> contacts = new List<string names>();\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public List(string names) contacts = new List(string names)();\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " var contacts = new List<string>();\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " var contacts = new List(string);",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "25": {
+        "rawQuestion": "#### Q26. What is the difference between throw exceptions and throw clauses?\n\n",
+        "selection": [
+            {
+                "rawOption": " Throw clauses fire only at runtime, while throw exceptions can fire at any time.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Throw exceptions overwrite the stack trace, while throw clauses retain the stack information.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Throw clauses overwrite the stack trace, while throw exceptions retain the stack information.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Throw exceptions fire only at runtime, while throw clauses can fire during compile time.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "26": {
+        "rawQuestion": "#### Q27. When an asynchronous method is executed, the code runs but nothing happens other than a compiler warning. What is most likely causing the method to not return anything?\n\n",
+        "selection": [
+            {
+                "rawOption": " The return yield statement is missing at the end of the method.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The method is missing an await keyword in its body.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The wait keyword is missing from the end of the method.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The yield keyword is missing from the method.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "27": {
+        "rawQuestion": "#### Q28. What are C# events?\n\n",
+        "selection": [
+            {
+                "rawOption": " system actions that communicate directly with the compiler at runtime\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " actions that execute when the code compiles, generating logs and test output\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " actions that generate notifications, which are sent to their registered listeners\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " user-only methods that send data to the application's back end",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "28": {
+        "rawQuestion": "#### Q29. What kind of values can arrays store?\n\n",
+        "selection": [
+            {
+                "rawOption": " unordered collections of numeric values\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " key-value pairs of any C# supported type\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " class and struct instances\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " multiple variables, or collections, of the same type",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "29": {
+        "rawQuestion": "#### Q30. Given this enumeration, how would you access the integer-type value of 'AppState.Loading'?\n\n`enum AppState { OffLine, Loading, Ready }`\n\n",
+        "selection": [
+            {
+                "rawOption": " string currentState = (string)AppState.Loading;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " string currentState = AppState.Loading.integralVal;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " int currentState = AppState.Loading.rawValue;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " int currentState = (int)AppState.Loading;",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "30": {
+        "rawQuestion": "#### Q31. What character would you use to start a regular expression pattern at a word boundary?\n\n",
+        "selection": [
+            {
+                "rawOption": " d\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " \\a\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " \\b\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " \\w",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "31": {
+        "rawQuestion": "#### Q32. To conform to the following interface, which of its members need to be implemented?\n\n```cs\npublic interface INameable\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " Both the FirstName and LastName properties need to be implemented.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Neither, they are both optional.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Only the LastName property needs to be implemented.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Only the FirstName property needs to be implemented.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "32": {
+        "rawQuestion": "#### Q33. You're dealing with multiple assemblies in your program, but are worried about memory allocation. At what point in the program life cycle are assemblies loaded into memory?\n\n",
+        "selection": [
+            {
+                "rawOption": " at runtime\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " at compile time\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " only when required\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " only when programmatically loaded",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "33": {
+        "rawQuestion": "#### Q34. What is most accurate description of a regular expression?\n\n",
+        "selection": [
+            {
+                "rawOption": " A regular expression is a C# tool used to parse HTML\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A regular expression is a special text string for describing a search patters.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A regular expression allows a variable to be passed by reference.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A regular expression allows a class to conform to the Equatable protocol.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "34": {
+        "rawQuestion": "#### Q35. Why would you use a class field in C#\n\n",
+        "selection": [
+            {
+                "rawOption": " To define behaviours of the class\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " To hold information and data contained in the class object\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " To communicate between classes and object\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " To store the class definition value",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "35": {
+        "rawQuestion": "#### Q36. When would you use generics in your code?\n\n",
+        "selection": [
+            {
+                "rawOption": " to increase code performance\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " all of these answers\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when code reuse is a priority\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when type safety is important",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "36": {
+        "rawQuestion": "#### Q37. What prints to the console when this code is executed?\n\n```cs\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\n\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " Login successful...\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Valid user!\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " an error, because the method signature of Login doesn't match the delegate\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Login successful... Valid user!",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "37": {
+        "rawQuestion": "#### Q38. How would you declare a sealed class named User?\n\n",
+        "selection": [
+            {
+                "rawOption": " public class User {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " abstract User {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " sealed class User {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " private sealed class User {}",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "38": {
+        "rawQuestion": "#### Q39. What is the difference between non-static and static classes?\n\n",
+        "selection": [
+            {
+                "rawOption": " non-static classes need to be initialized before use, while static classes do not\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " non-static classes are accessible only from an interface while static classes are accessible from anywhere\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " non-static classes need to initialize all class members at runtime, while static classes do not\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " non-static classes do not need to be initialized while static classes do",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "39": {
+        "rawQuestion": "#### Q40. Which characteristic prevents this code from compiling?\n\n`public int age=\"28\"`\n\n",
+        "selection": [
+            {
+                "rawOption": " type safety\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " single inheritance\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " dependency injection\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " multiple inheritance",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "40": {
+        "rawQuestion": "#### Q41. How would you serialize this class?\n\n`public class User {}`\n\n",
+        "selection": [
+            {
+                "rawOption": " Mark the User class with the `DeserializableAttribute`.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Declare the class as `public serializable class User {}`.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Mark the User class with the `SerializableAttribute` attribute.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Declare the class as `private serializable class User {}`.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "41": {
+        "rawQuestion": "#### Q42. How would you write a delegate named ResultCallback with an int parameter named responseCode?\n\n",
+        "selection": [
+            {
+                "rawOption": " public delegate ResultCallback(int responseCode);\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public delegate void ResultCallback<(int) responseCode>;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public void delegate ResultCallback\\<int responseCode\\>;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public delegate void ResultCallback(int responseCode);",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "42": {
+        "rawQuestion": "#### Q43. What is the difference between a static and non-static method?\n\n",
+        "selection": [
+            {
+                "rawOption": " non-static methods always need to have a void return type\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " non-static methods do not have access to static member variables\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " static methods do not have to instantiate an instance of the class to call the method\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " static methods always have to be public",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "43": {
+        "rawQuestion": "#### Q44. What is the correct way to write an event named apiResult based on a delegate named ResultCallback?\n\n",
+        "selection": [
+            {
+                "rawOption": " public void event ResultCallback apiResult;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public event ResultCallback(() -> apiResult);\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public event void ResultCallback\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public event ResultCallback apiResult;",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "44": {
+        "rawQuestion": "#### Q45. When will the code inside finally block be executed in a try-catch statement?\n\n",
+        "selection": [
+            {
+                "rawOption": " if there is an error, it won't execute at all\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " between the try and catch blocks\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " after the try and catch blocks\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " when the finally block overrides the catch block and executes in its place",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "45": {
+        "rawQuestion": "#### Q46. What method correctly extends the string class?\n\n",
+        "selection": [
+            {
+                "rawOption": " public static string IsvalidName(this string i, string value) {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public static void IsvalidName(this string i, string value) {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public string IsvalidName(this string i, string value) {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public void IsvalidName(this string i, string value) {}",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "46": {
+        "rawQuestion": "#### Q47. How are C# classes limited?\n\n",
+        "selection": [
+            {
+                "rawOption": " They do not support multiple inheritance.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " They support multiple inheritance.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " They can have only a set number of properties.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " They can have only a set number of methods.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "47": {
+        "rawQuestion": "#### Q48. What function do namespaces perform?\n\n",
+        "selection": [
+            {
+                "rawOption": " Namespaces calculate code coverage at runtime.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Namespaces compile application code together at compile time.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Namespaces group code together into a single repository.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Namespaces separate code into groupings, control access, and void naming collisions.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "48": {
+        "rawQuestion": "#### Q49. What is a thread pool?\n\n",
+        "selection": [
+            {
+                "rawOption": " a collection of synchronous methods created during initialization that cannot be reused\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a collection of threads created during initialization that can be reused\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a collection of threads only recognized at compile time that can be reused\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a collection of asynchronous methods created at compile time that cannot be reused",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "49": {
+        "rawQuestion": "#### Q50. When an object in C# is serialized, what is it converted to?\n\n",
+        "selection": [
+            {
+                "rawOption": " XML\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " JSON\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " byte stream\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " value stream",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "50": {
+        "rawQuestion": "#### Q51. What is a delegate\n\n",
+        "selection": [
+            {
+                "rawOption": " a variable that holds a reference to a value type and its content\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a specific value type that can be used only in callback methods\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a type that holds a reference to a method with a particular parameter list and return type\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " a custom variable type that can be used in abstract classes",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "51": {
+        "rawQuestion": "#### Q52. What are the four keywords associated with exception handling in C#?\n\n",
+        "selection": [
+            {
+                "rawOption": " try, catch, valid, invalid\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " try, valid, finally, throw\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " try, catch, finally, throw\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " finally, throw, valid, invalid",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "52": {
+        "rawQuestion": "#### Q53. What is the main difference between the is and as operators?\n\n",
+        "selection": [
+            {
+                "rawOption": " The is operator checks instance types, while the as operator checks the inherited type.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The is operator checks primitive data types, while the as operator checks the object type.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The as operator checks object type, while the is operator attempts to cast an object to a specific type.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The is operator checks object type, while the as operator attempts to cast an object to a specific type.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "53": {
+        "rawQuestion": "#### Q54. What is the difference between finally and finalize blocks?\n\n",
+        "selection": [
+            {
+                "rawOption": " The finally block is called during the execution of a try and catch block, while the finalize method is called after garbage collection.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The finally block is called after the execution of a try and catch block, while the finalize method is called just before garbage collection.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The finalize block is called before the execution of a try and catch block, while the finally method is called just before garbage collection.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The finalize block is called during the execution of a try and catch block, while the finally method is called after garbage collection.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "54": {
+        "rawQuestion": "#### Q55. Your application has a value type called username that needs to be able to accept null values, but this is generating compile-time errors. How would you fix this in code?\n\n",
+        "selection": [
+            {
+                "rawOption": " Null<string> username = null;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " string? username = null;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Type<string>? username = null;\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Optional<string> username = null;",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "55": {
+        "rawQuestion": "#### Q56. Which code snippet correctly declares a custom exception named InvalidResponse?\n\n",
+        "selection": [
+            {
+                "rawOption": " struct InvalidResponse: Exception {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " class InvalidResponse: Exception {}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public Exception InvalidResponse = new Exception ();\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " public Exception InvalidResponse () -> Exception;",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "56": {
+        "rawQuestion": "#### Q57. How would you write an enum variable called AppState with values for Offline, Loading, and Ready?\n\n",
+        "selection": [
+            {
+                "rawOption": " enum AppState = [Offline, Loading, Ready]\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " enum AppState {\"Offline\", \"Loading\", \"Ready\"}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " enum AppState = {Offline, Loading, Ready}\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " enum AppState {Offline, Loading, Ready}",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "57": {
+        "rawQuestion": "#### Q58. What is the main difference between a value type and a reference type?\n\n",
+        "selection": [
+            {
+                "rawOption": " A value type can be any primitive type, while reference types must be type-agnostic.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A value type refers to another value, while a reference type refers to a value in memory.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A value type stores an actual value, while a reference type is a pointer to a value.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " A value type is available only at runtime, while a reference type is available only at compile time.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "58": {
+        "rawQuestion": "#### Q59. What is the difference between the `break` and `continue` keywords?\n\n",
+        "selection": [
+            {
+                "rawOption": " The `break` keyword is used to break out of multiple iteration statements, while `continue` can only break out of code blocks that have single iterations.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The `break` keyword literally breaks out of a control flow statement, while `continue` ignores the rest of the control statement or iteration and starts the next one.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The `break` keyword literally breaks out of the current control flow code and stops it dead, while `continue` keeps executing the code after an exception is thrown.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The `break` keyword jumps out of an iteration and then proceeds with the rest of the control flow code, while `continue` stops the executing code dead.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "59": {
+        "rawQuestion": "#### Q60. Which code snippet correctly declares a variable named userId with a public `get` and private `set`?\n\n",
+        "selection": [
+            {
+                "rawOption": " `public int userID <get, set>;`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public int userID [get, private set];`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public int userID { get; private set; }`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public int userID = { public get, private set };`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "60": {
+        "rawQuestion": "#### Q61. What is true about virtual methods?\n\n",
+        "selection": [
+            {
+                "rawOption": " `Overriding virtual methods in a derived class is mandatory.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Overriding virtual methods in a derived class is not possible.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Virtual methods always need a default implementation.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Virtual methods cannot have default implementation.`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "61": {
+        "rawQuestion": "#### Q62. What is likely to happen if you have multiple threads accessing the same resource in your program?\n\n",
+        "selection": [
+            {
+                "rawOption": " `resource overload`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `thread jumping`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `deadlock and race conditions`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `nothing, since this is what threading is for`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    },
+    "62": {
+        "rawQuestion": "#### Q63. How do you indicate that a string might be null?\n\n",
+        "selection": [
+            {
+                "rawOption": " `A string cannot be nullable.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string? myVariable`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string myVariable = null`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string(null) myVariable`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "63": {
+        "rawQuestion": "#### Q64. Do you need to declare an out variable before you use it?\n\n",
+        "selection": [
+            {
+                "rawOption": " `No, you can declare an out in the parameter list.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Out variables are no longer part of C#.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `You must declare it if it is a primitive type.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Yes.`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "64": {
+        "rawQuestion": "#### Q65. How would you access the last two people in an array named People?\n\n",
+        "selection": [
+            {
+                "rawOption": " `People[..^2]`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `You cannot do this in C#.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `People[..^3]`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `People[^2]`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "65": {
+        "rawQuestion": "#### Q66. When can anonymous types be created?\n\n",
+        "selection": [
+            {
+                "rawOption": " `at compile time`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `after runtime`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `at runtime`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `after compile time`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "66": {
+        "rawQuestion": "#### Q67. What is true about thread multitasking?\n\n",
+        "selection": [
+            {
+                "rawOption": " `Thread multitasking allows code to be executed concurrently`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Thread multitasking allows code to be executed only when handling a user event.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Thread multitasking blocks code from being executed simultaneously to guard memory.`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `Thread multitasking adds single-threaded code blocks together.`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "67": {
+        "rawQuestion": "#### Q68. What accessibility level does this class field have ?\n\n`private string LastName;`\n\n",
+        "selection": [
+            {
+                "rawOption": " It can be used by other code only in the same class or struct.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It can be used by other code in a referenced assembly.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It can be used only by code contained in a derived class.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " It can be used by other code in the same assembly.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "68": {
+        "rawQuestion": "#### Q69. How would you correctly declare a jagged array called 'partyInvites' with 10 empty elements?\n\n",
+        "selection": [
+            {
+                "rawOption": " `string[] partyInvites = new string[10];`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string[][] partyInvites = new string[10][];`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string[][] partyInvites = new string[10]();`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `string <[]> partyInvites = new string <[10]>;`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "69": {
+        "rawQuestion": "#### Q70. How could you pause a thread for three seconds?\n\n",
+        "selection": [
+            {
+                "rawOption": " Thread.Pause(3000);\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Thread.Resume(-3000);\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Thread.Suspend(3000);\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Thread.Sleep(3000);",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "70": {
+        "rawQuestion": "#### Q71. What is wrong with this code?\n\n```cs\nvoid MyFunction()\n{\n    {\n        int a = 10;\n        int b = 20;\n        int c = a + b;\n    }\n\n    Console.WriteLine(c);\n}\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " Variable c is never used; displaying it on the console does not count as usage.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Variables a and b are never used.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " You cannot place code inside brackets inside another block.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " Variable c no longer exists outside the block.",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "71": {
+        "rawQuestion": "#### Q72. Which statement is True?\n\n",
+        "selection": [
+            {
+                "rawOption": " All are true.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " None are true.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " string is a value type.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " string is an alias for String",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "72": {
+        "rawQuestion": "#### Q73. How would you return more than one value from a method?\n\n",
+        "selection": [
+            {
+                "rawOption": " Use either a tuple or an out variable.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The only way is to use an out variable.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " The only way is to use a tuple.\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " This cannot be done",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            0
+        ],
+        "status": "idle"
+    },
+    "73": {
+        "rawQuestion": "#### Q74. Which is a valid example of a derived class?\n\n",
+        "selection": [
+            {
+                "rawOption": " `public class PremiumUser sub User {}`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public class PremiumUser: User {}`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public class PremiumUser -> sub User {}`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `public class User: PremiumUser {}`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            1
+        ],
+        "status": "idle"
+    },
+    "74": {
+        "rawQuestion": "#### Q75. What is the correct way to call a static method named DebugString from a static class called InputManager?\n\n",
+        "selection": [
+            {
+                "rawOption": " `static InputManager.DebugString();`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `InputManager().DebugString;`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `new InputManager().DebugString();`\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " `InputManager.DebugString();`",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            3
+        ],
+        "status": "idle"
+    },
+    "75": {
+        "rawQuestion": "#### Q76. What values can be assigned to this variable?\n    \n```cs\npublic string? nickname\n```\n\n",
+        "selection": [
+            {
+                "rawOption": " null\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " String values\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " String values or null\n",
+                "status": "idle"
+            },
+            {
+                "rawOption": " String values with more than one character",
+                "status": "idle"
+            }
+        ],
+        "answers": [
+            2
+        ],
+        "status": "idle"
+    }
+}
